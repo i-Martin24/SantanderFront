@@ -6,11 +6,8 @@ h1 {
 }
 
 .header {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 40px 20px 0px 20px;
   font-size: 0;
-  line-height: 45px;
 }
 
 li {
@@ -18,8 +15,10 @@ li {
 }
 
 .header >*{ /*A los hijos de header, es decir a cada uno de ellos, les aplica las siguientes propiedades*/
-  display: inline-block;
+  
+  
   font-size: 16px;
+  display: inline-block;
   vertical-align: middle;
   height: 100%;
   line-height: 45px;
