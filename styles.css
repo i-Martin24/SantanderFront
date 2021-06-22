@@ -8,8 +8,16 @@ li {
   display: inline;
 }
 
+.fixed-header{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .header {
+  position: fixed;
   margin: 40px 20px 0px 20px;
   font-size: 0;
   line-height: 45px;
@@ -18,6 +26,7 @@ li {
 
 
 .header >*{ /*A los hijos de header, es decir a cada uno de ellos, les aplica las siguientes propiedades*/
+  
   font-size: 16px;
   display: inline-block;
   vertical-align: middle;
@@ -66,4 +75,55 @@ li {
   padding-left: 50%;
   padding-top: 50%;
   margin-top: 10%;
+}
+
+
+
+.publish h3 {
+  font-family: "Bodoni 72";
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+
+.publish > p {
+  font-size: 16px;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publish > form {
+  display: flex;
+}
+
+.publish > form p {
+  color: #025157;
+  margin-right: 18px;
+}
+
+/*promo será nuestro flex containter principal y va a ordernar a los flex items*/
+.advertisments{
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.video{
+  
+  
+  display: flex;
+  size: auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  padding-right: 5%;
+
+}
+
+.video img{
+  display: flex;
+  width:  120px;
+  height: 40px;
 }
