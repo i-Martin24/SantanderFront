@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /* flex-direction: row-reverse;  los pone al reves 6 5 4 3 2 1 */
+    /* flex-direction: column; lo dja en columna */
+    /* flex-wrap: wrap; multilinea */
+    /* flex-wrap: nowrap; */
+
+    background-color: blue;
+}
+
+.container > .item {
+    background-color: gray;
+    width: 50%;
+    height: 50px;
+}
+
+/* main */
+.main {
+    display:flex;
+    width: 500px;
+}
+/* .main div:nth-of-type(1){
+    flex-grow: 1;
+}
+.main div:nth-of-type(4){
+    flex-grow: 1;
+} */
+.item-1 {flex-basis:100px; flex-grow: 1 }
+.item-2 {flex-basis:100px; flex-grow: 1 }
+.item-3 {flex-basis:100px; flex-grow: 1 }
+.item-4 {flex-basis:100px; flex-grow: 1 }

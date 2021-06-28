@@ -15,5 +15,3 @@ git remote add origin https://github.com/i-Martin24/SantanderFront.git
 ​
 # Enviar commits al servidor de GitHub
 git push -u origin master
-
-#i-Martin24
