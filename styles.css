@@ -1,129 +1,176 @@
-h1 {
-  color: rgb(111, 111, 201);
-}
-h1 {
-  color: rgb(15, 30, 240);
-}
-li {
-  display: inline;
+body {
+    background-color: #fffbf7;
+    /* background-image: url( '') */
 }
 
-.fixed-header{
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+h1 {
+    color: #46484c;
 }
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #8b8b8bcc;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+button {
+    color: #fff;
+    background-color: #025157;  
+}
+
+/* header */
+.fixed-header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+main {
+    margin-top: 105px;
+    text-align: center;
+}
+
 
 .header {
-  position: fixed;
-  margin: 40px 20px 0px 20px;
-  font-size: 0;
-  line-height: 45px;
-  font-family: sans-serif;
+    margin: 40px 20px 0 20px;
+    font-size: 0;
+    font-family: sans-serif;
+    height: 45px;
+}
+/* todos los hijos que tenga header */
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+
+li {
+      display: inline;
+}
+.logo {
+      width: 15%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;
+    color: #025157;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px; 
 }
 
 
-.header >*{ /*A los hijos de header, es decir a cada uno de ellos, les aplica las siguientes propiedades*/
-  
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  line-height: 45px;
-  font-family: sans-serif;
+.actions {
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
 }
 
-.logo{
-  width: 15%;
+.actions a {
+    color: #67b54b;
+  }
+
+.actions button {
+    color:white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
 }
 
-.logo > img {
-  height: 100%;
+/* section del video y el article */
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    gap: 20px;
 }
-
-.navbar{
-  width: 70%;
-  text-align: center;
-  color: #025157;
-  font-weight: 500;
+.div-video {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
 }
-
-.actions{
-  width: 15%;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0 10px;
+.div-video img {
+    width: 200px;
 }
-
-.actions a{
-  color: #67b54b;
-  text-align: left;
-}
-
-.actions button{
-  color:white;
-  background-color: #67b54b;
-  padding: 12px 14px 12px 14px;
-  border: 0;
-  border-radius: 5px;
-}
-
-.capterra{
-  padding-left: 50%;
-  padding-top: 50%;
-  margin-top: 10%;
-}
-
-
-
-.publish h3 {
-  font-family: "Bodoni 72";
+.publish h2{
+    font-family: "Alegreya", serif;
   font-size: 40px;
   line-height: 48px;
   color: #025157;
 }
 
 .publish > p {
-  font-size: 16px;
+    font-size: 16px;
   color: #343434;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .publish > form {
-  display: flex;
+    display: flex;
 }
 
 .publish > form p {
-  color: #025157;
-  margin-right: 18px;
+    color: #8b8b8bcc;
+    margin-right: 18px;
+}
+.email {
+    border-radius: 5px;
 }
 
-/*promo será nuestro flex containter principal y va a ordernar a los flex items*/
-.advertisments{
-  display: flex;
-  width: 70%;
-  margin: 100px auto;
-  align-items: center;
+.email {
+    display:flex;
+    border-radius: 5px;
 }
 
-.video{
-  
-  
-  display: flex;
-  size: auto;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px auto;
-  padding-right: 5%;
-
+.features{
+    display: flex;
+    justify-content: center;
 }
 
-.video img{
-  display: flex;
-  width:  120px;
-  height: 40px;
+.features{
+    background-color: #025157;
+    display: grid;
+    /*grid-template-columns: 300px 300px;*/
+    /*grid-template-columns: repeat(2, 300px);*/
+    /*grid-template-columns: 500px 1fr; /*A la primer columna le dejas 500 y a la segunda el espacio que tenemos disponible lo divides*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,330px);*/
+    /*grid-template:  FILAS / COLUMNAS;*/
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+
+
+.feature-art{
+    background-color: white;
+    margin: 10%;
+    width: 70%;
+    height: 330px;
+    border-radius: 10px;
+}
+
+.feature-art button{
+    display: flex;
+    
+    background: transparent;
+    color: #67b54b;
+    font-size: 16px;
+    border-color:white;
+    border-style: solid;
+    
 }
