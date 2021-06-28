@@ -59,8 +59,7 @@ main {
 
 
 
-/* header */
-/* fixed en una section, su funcion que no se mueva el header */
+/* =========================== START | HEADER ====================== */
 .fixed-header {
   position: fixed;
   background-color: white;
@@ -84,6 +83,7 @@ main {
   justify-content: space-around;
   /* align-items: center; */
 }
+
 .navbar li {
   display: inline;
 }
@@ -95,7 +95,7 @@ main {
   text-align: center;
   color: #025157;
 }
-
+/* =========================== END | HEADER ====================== */
 .menu-item {
   display: inline;
   margin-right: 25px;
@@ -103,7 +103,6 @@ main {
 }
 
 .actions {
-  /* width: 15%; */
   text-align: left;
   font-size: 14px;
   display: flex;
@@ -176,7 +175,7 @@ main {
   border-bottom-left-radius: 0;
 }
 
-/* section features */
+/* =========================== START | SECTION FEATURES ====================== */
 .features {
   background-color: #025157;
   padding: 50px 120px;
@@ -243,8 +242,8 @@ main {
   height: 100%;
   padding-left: 0;
 }
-
-/* section of success-stories *********************************/
+/* =========================== END | SECTION FEATURES ====================== */
+/* =========================== START | SUCCESS HISTORIES ====================== */
 .users {
   background-color: #a1d683;
   padding: 50px 0;
@@ -329,7 +328,7 @@ main {
   color: #8b8b8bcc;
   font-size: 16px;
 }
-
+/* =========================== END | SUCCESS HISTORIES ====================== */
 /* =========================== START | HOW DOES MATCHA WORKS? ====================== */
 .hw-content {
     width: 80%;
